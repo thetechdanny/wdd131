@@ -28,7 +28,7 @@ header h4 {
     display: flex;
     background-color: black;
     color: white;
-
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -41,7 +41,7 @@ header h4 {
 }
 
 .navcontainer a:hover {
-    background-color: bisque;
+    background-color: rgb(175, 100, 8);
 }
 
 .maincontent {
@@ -58,6 +58,7 @@ header h4 {
     grid-row: 2;
     grid-column: 3/4;
     padding: 2rem;
+    
 }
 
 footer {
