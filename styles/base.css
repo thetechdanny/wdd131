@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amaranth', sans-serif;
+    padding: 20px;
+    font-size: 18px;
+}
+
+#course-title {
+    display: block;
+    background-color: rgb(88, 50, 4);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-weight: bolder
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(192, 160, 122);
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: rgb(88, 50, 4);
+    color: white;
+    border: 0.5px solid white;
+
+}
+
+.centeredname {
+    text-align: center;
+    color: rgb(88, 50, 4);
+    margin: 1rem;
+}
+
+.gridcontent {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 350px;
+    width: 95%;
+    margin: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0.5rem;
+
+    background-color: white;
+}
+
+.card .aboutmeheader {
+    background-color: rgb(88, 50, 4);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    border-radius: 20px 20px 0 0;
+
+}
+
+
+.aboutmebody .myphoto {
+
+    width: 150px;
+    height: 150px;
+    display: inline;
+    padding: 0 1rem 0 2rem;
+    float: right;
+}
+
+.aboutmebody {
+    text-align: justify;
+    border-radius: 0 0 20px 20px;
+    line-height: 2rem;
+    background-color: white;
+    margin: 0;
+    padding: 1.2rem 1.5rem;
+}
+
+.nigeria {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    border-bottom: 0.5px solid rgb(88, 50, 4);
+}
+
+figcaption {
+    float: left;
+    padding: 3rem 2.5rem 6rem 0;
+    text-align: center;
+}
+
+figcaption img {
+    width: 150px;
+    height: auto;
+
+}
+
+.aboutnigeria {
+    margin: 1rem 10rem 0 0;
+    padding: 0 0 4rem 0;
+}
+
+.webdev {
+    background-color: rgb(88, 50, 4);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.webdevlist ul {
+    margin: 5rem 0 0 3rem;
+    ;
+    list-style-type: square;
+    line-height: 2rem;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0 0 0;
+    background-color: rgb(88, 50, 4);
+    padding: 1rem;
+    color: white;
+}
