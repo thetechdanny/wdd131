@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     font-family: 'Amaranth', sans-serif;
     padding: 20px;
     font-size: 18px;
-    
+
 }
 
 #course-title {
