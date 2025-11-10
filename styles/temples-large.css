@@ -29,6 +29,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
         justify-items: center;
+        margin: 0 auto;
     }
 
     figure img {
