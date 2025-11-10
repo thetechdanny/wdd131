@@ -39,7 +39,7 @@ header p {
     content: "X";
 }
 
-header nav {
+nav {
     display: none;
     position: absolute;
     top: 3rem;
