@@ -22,9 +22,10 @@ header p {
     right: 1rem;
     background-color: rgb(3, 58, 90);
     color: white;
-    text-align: center;
+
     padding: 1rem;
     margin: 0 0.5rem;
+    text-decoration: none;
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -44,21 +45,21 @@ nav {
     position: absolute;
     top: 3rem;
     right: .5rem;
+    background-color: rgb(3, 58, 90);
 }
 
 nav.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 nav a {
-    display: block;
     text-decoration: none;
     color: white;
     flex: 1 1 auto;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-weight: 200;
-    background-color: rgb(3, 58, 90);
     border-bottom: 1px solid white;
 }
 
@@ -90,7 +91,7 @@ footer {
     color: white;
     text-align: center;
     padding: 0.5rem;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
 }
 
 footer p {
