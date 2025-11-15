@@ -1,0 +1,54 @@
+@media only screen and (min-width: 650px) {
+    .hero {
+        position: relative;
+    }
+
+    .weatherdata {
+        background-color: rgba(240, 255, 255, 0.7);
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        padding: 3rem;
+        border: 0.5px solid rgba(189, 186, 186, 0.4);
+        color: black;
+    }
+
+    .weatherdatacaption {
+        background-color: rgb(5, 61, 5);
+        color: white;
+        position: absolute;
+        top: 8px;
+        left: -12px;
+        padding: 0.5rem 3rem 8px 3rem;
+        font-size: 1.5rem;
+
+    }
+
+    .weatherreport {
+        background-color: rgba(240, 255, 255, 0.7);
+        position: absolute;
+        top: 500px;
+        right: 20px;
+        padding: 3rem;
+        border: 0.5px solid rgba(189, 186, 186, 0.4);
+        color: black;
+    }
+
+    .weatherreportheading h2 {
+        background-color: rgb(5, 61, 5);
+        color: white;
+        position: absolute;
+        top: 8px;
+        left: -12px;
+        padding: 0.5rem 3rem 8px 3rem;
+        font-size: 1.5rem;
+    }
+
+    .cloud {
+        position: absolute;
+        top: 17px;
+        right: 130px;
+        width: 20px;
+        height: auto;
+    }
+}

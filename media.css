@@ -1,0 +1,11 @@
+/* 1. Small screens (mobile-first) No media query needed — this is your default design. 2. Medium screens (tablets) Example: @media (min-width: 600px) {
+    ...
+}
+
+3. Large screens (small laptops) Example: @media (min-width: 900px) {
+    ...
+}
+
+4. Extra-large screens (desktop monitors) Example: @media (min-width: 1200px) {
+    ...
+} */
