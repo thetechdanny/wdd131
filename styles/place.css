@@ -1,3 +1,11 @@
+:root {
+    --primary-color: rgb(8, 109, 8);
+    --text-color-light: white;
+    --heading-size: 2rem;
+    --line-height: 25px;
+    --font-family: 'Amaranth', sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,14 +13,13 @@
 }
 
 body {
-    font-family: 'Amaranth' sans-serif;
+    font-family: var(--font-family);
 }
 
 header h1 {
-    background-color: rgb(8, 109, 8);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
     padding: 2rem;
-
     text-align: center;
 }
 
@@ -24,17 +31,16 @@ img {
 }
 
 .weatherdata {
-    
-    line-height: 25px;
+    line-height: var(--line-height);
 }
 
 .weatherreport {
     border-top: 0.2px solid rgba(189, 186, 186, 0.2);
-    line-height: 25px;
+    line-height: var(--line-height);
 }
 
 .weatherdatacaption {
-    font-size: 2rem;
+    font-size: var(--heading-size);
     padding: 1rem 0;
     font-weight: bold;
     text-align: center;
@@ -62,13 +68,12 @@ table th {
 
 .weatherreportheading h2 {
     padding: 1.5rem 0;
-    font-size: 2rem;
+    font-size: var(--heading-size);
 }
 
 footer {
     text-align: center;
-    
-    background-color: rgb(8, 109, 8);
+    background-color: var(--primary-color);
     padding: 1rem;
-    color: white;
+    color: var(--text-color-light);
 }

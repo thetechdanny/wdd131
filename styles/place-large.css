@@ -45,10 +45,17 @@
     }
 
     .cloud {
-        position: absolute;
-        top: 17px;
-        right: 130px;
+        display: none;
+    }
+
+    .weathericon::after {
+        content: "";
+        display: inline-block;
         width: 20px;
-        height: auto;
+        height: 20px;
+        background-image: url("../images/cloud-large.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 12px;
     }
 }
