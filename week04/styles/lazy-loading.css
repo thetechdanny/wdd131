@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    line-height: 1.6;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.fade-in figure img {
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        
+    }
+
+    100% {
+        opacity: 1;
+       
+    }
+}
+
+footer p {
+
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin-top: 0.5rem;
+    line-height: 1;
+
+}
