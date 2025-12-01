@@ -1,0 +1,246 @@
+:root {
+    --muted-olive-2: #97a97cff;
+    --dusty-olive: rgb(45, 70, 6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amaranth', sans-serif;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: var(--dusty-olive);
+    flex-wrap: wrap;
+}
+
+nav {
+    position: static;
+    padding: 0 0 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    transition: background-color 0.3s, border 0.3s;
+    font-size: small;
+}
+
+#logo img {
+    width: 30px;
+    height: auto;
+}
+
+
+
+nav a:hover {
+    background-color: var(--muted-olive-2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section Wrapper */
+#hero-section {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    /* you can adjust the height */
+    display: flex;
+    justify-content: center;
+    /* centers horizontally */
+    align-items: center;
+    /* centers vertically */
+    overflow: hidden;
+}
+
+
+#hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: block;
+    opacity: 0.5;
+}
+
+
+#welcome {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(151, 169, 124, 0.55);
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: var(--dusty-olive);
+}
+
+
+#welcome h1 {
+    font-size: 2rem;
+    margin-bottom: .3rem;
+}
+
+#welcome p {
+    font-size: 1rem;
+}
+
+
+#welcome input {
+    background-color: var(--dusty-olive);
+    border: none;
+    padding: .7rem 1.5rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#welcome input:hover {
+    background-color: var(--muted-olive-2);
+    border: 0.5px solid white;
+}
+
+
+#bag {
+    width: 80px;
+    margin-top: 1rem;
+}
+
+
+#prod-serv {
+    font-size: .9rem;
+    padding: 2rem;
+}
+
+#benefits {
+    margin-top: 2rem;
+}
+
+
+ul li {
+    list-style: none;
+    margin-bottom: .5rem;
+}
+
+li::before {
+    content: "✓ ";
+    color: var(--dusty-olive);
+    font-weight: bold;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#featured-products {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+}
+
+#featured-products img {
+    width: 80vw;
+    height: auto;
+}
+
+.slide-in {
+    animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: var(--dusty-olive);
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+}
+
+footer p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+/* PRODUCT PAGE CSS */
+
+#product-search {
+    width: 150px;
+    padding: .5rem;
+    background: url("/online-shopping-cart/images/search.svg");
+    background-size: 18px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    margin-top: 1rem;
+}
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+#filters a {
+    background-color: var(--dusty-olive);
+
+}
+
+#filters a:hover {
+    background-color: var(--muted-olive-2);
+}
+
+
+h3 {
+    font-size: .9rem;
+    padding: .5rem 1rem;
+}
+
+#filtered-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.filtered-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+}
+
+.filtered-card img {
+    width: 100%;
+    height: auto;
+}

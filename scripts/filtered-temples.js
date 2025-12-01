@@ -191,6 +191,7 @@ function showAll() {
 }
 
 
+
 document.querySelector("#home").addEventListener("click", showAll);
 document.querySelector("#old").addEventListener("click", showOld);
 document.querySelector("#new").addEventListener("click", showNew);

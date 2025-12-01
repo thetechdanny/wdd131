@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Online Stores</title>
+    <meta name="author" content="Daniel Kalu">
+    <meta name="description"
+        content="Shop online for the best products at unbeatable prices. Discover a wide range of items from drinks to snacks, all in one convenient place. Enjoy seamless shopping with fast shipping and excellent customer service.">
+    <link rel="icon" type="image/x-icon" href="/images/cart.png">
+    <link rel="stylesheet" href="styles/onlineshop.css">
+    <script src="scripts/onlineshop.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/cart.png" alt="logo" width="50" height="50">
+        </div>
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="products.html" target="_blank">Products</a>
+            <a href="#" target="_blank">Cart<span id="cart-no">( )</span></a>
+            <input type="search" id="product-search" placeholder="Search products...">
+        </nav>
+    </header>
+    <main>
+        <h3>Category Filters</h3>
+
+        <nav id="filters">
+            <a href="#" data-category="all">All</a>
+            <a href="#" data-category="drink">Drinks</a>
+            <a href="#" data-category="snack">Snacks</a>
+            <a href="#" data-category="icecream">Ice Creams</a>
+        </nav>
+
+        <div id="filtered-products"></div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ‖ Daniel Kalu - thetechdanny(Github Username) ‖ Nigeria</p>
+        <p><span>Last modification:</span> <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
