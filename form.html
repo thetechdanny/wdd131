@@ -38,19 +38,19 @@
                     <label for="rate1">☆</label>
                 </div>
                 <div>
-                    <input type="radio" name="rating" id="rate2" value="2">
+                    <input type="radio" name="rating" id="rate2" value="2" required>
                     <label for="rate2">☆☆</label>
                 </div>
                 <div>
-                    <input type="radio" name="rating" id="rate3" value="3">
+                    <input type="radio" name="rating" id="rate3" value="3" required>
                     <label for="rate3">☆☆☆</label>
                 </div>
                 <div>
-                    <input type="radio" name="rating" id="rate4" value="4">
+                    <input type="radio" name="rating" id="rate4" value="4" required>
                     <label for="rate4">☆☆☆☆</label>
                 </div>
                 <div>
-                    <input type="radio" name="rating" id="rate5" value="5">
+                    <input type="radio" name="rating" id="rate5" value="5" required>
                     <label for="rate5">☆☆☆☆☆</label>
                 </div>
             </fieldset>
@@ -64,27 +64,22 @@
             <fieldset class="features">
                 <legend>Useful Features (Check all that apply)</legend>
 
-                <label>
-                    <input type="checkbox" id="feature1" name="features" value="durable">
-                    Durable
-                </label>
+                <input type="checkbox" id="feature1" name="features" value="durable">
+                <label for="feature1">Durability</label>
+                <br>
 
-                <label>
-                    <input type="checkbox" id="feature2" name="features" value="lightweight">
-                    Lightweight
-                </label>
+                <input type="checkbox" id="feature2" name="features" value="ease of use">
+                <label for="feature2">Ease of Use</label>
+                <br>
 
-                <label>
-                    <input type="checkbox" id="feature3" name="features" value="fast">
-                    Fast Performance
-                </label>
+                <input type="checkbox" id="feature3" name="features" value="performance">
+                <label for="feature3">Performance</label>
+                <br>
 
-                <label>
-                    <input type="checkbox" id="feature4" name="features" value="easy">
-                    Easy to Use
-                </label>
+                <input type="checkbox" id="feature4" name="features" value="design">
+                <label for="feature4">Design</label>
+
             </fieldset>
-
 
             <label for="reviewText">Written Review</label>
             <textarea id="reviewText" name="reviewText" rows="5"></textarea>
