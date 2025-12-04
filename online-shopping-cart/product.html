@@ -25,11 +25,14 @@
         <nav>
             <a href="index.html" target="_blank">Home</a>
             <a href="products.html" target="_blank">Products</a>
-            <a href="#" target="_blank">Cart<span id="cart-no">( )</span></a>
+            <a href="#" target="_blank">Cart<span id="cartNo">( )</span></a>
             <input type="search" id="search-bar" placeholder="Search products...">
         </nav>
     </header>
     <main>
+        <div id="singleProduct"></div>
+        <div id="quantity"><span class="negativeSign">-</span><input type="number" placeholder="Select Quantity" min="1" step="1" value="1"><span class="positiveSign">+</span></div>
+        <div id="cartbutton"><input type="button" value="Add to Cart" id="cart"></div>
     </main>
 
     <footer>
