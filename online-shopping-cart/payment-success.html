@@ -33,6 +33,25 @@
         <p>&copy;<span id="currentyear"></span> ‖ Daniel Kalu - thetechdanny(Github Username) ‖ Nigeria</p>
         <p><span>Last modification:</span> <span id="lastModified"></span></p>
     </footer>
+    <script>
+        // Clear cart after successful order and update header counter
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                localStorage.removeItem('cart');
+                localStorage.removeItem('cartItems');
+
+                // Update any cart counter in the header (supporting common IDs)
+                const cartCounter = document.querySelector('#cart-no') || document.querySelector('#cartNo');
+                if (cartCounter) cartCounter.innerHTML = '( 0 )';
+
+                // If there's an element showing cart items count elsewhere
+                const cartItemsEl = document.getElementById('cartItems');
+                if (cartItemsEl) cartItemsEl.innerHTML = '';
+            } catch (err) {
+                console.error('Error clearing cart after success page:', err);
+            }
+        });
+    </script>
 </body>
 
 </html>
