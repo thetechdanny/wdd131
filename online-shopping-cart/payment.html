@@ -29,13 +29,32 @@
         </nav>
     </header>
     <main>
-        <div id="cartBody">
-            <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem;">
-                <h3>Cart Items</h3>
-                <button id="clearCartBtn">Clear Cart</button>
-            </div>
-            <div id="cartItems"></div>
+        <div class="paymentCard">
+            <h2>Payment Page</h2>
+            <p>Please proceed with your payment details.</p>
+            <h3>Customer Information</h3>
+            <p>Full Name: xxxxxxxxxxx</p>
+            <p>Email: xxxxxxxxxxxxxxx</p>
+            <p>Phone No: xxxxxxxxxxxxxx</p>
+            <p>Address: xxxxxxxxxxxxxxxxxxxxx</p>
         </div>
+        <form method="get" action="payment-success.html">
+            <h3>Payment Method</h3>
+
+            <input type="radio" id="onDelivery" name="Delivery" value="Delivery" required>
+            <label for="onDelivery">On Delivery</label><br>
+            <input type="radio" id="debitCard" name="Delivery" value="debit card" required>
+            <label for="debitCard">Debit Card</label>
+
+
+            <div class="paymentCard">
+                <h3>Order Summary</h3>
+                <p id="summaryDetails"></p>
+            </div>
+            <div id="placeOrderBtn">
+            <input type="submit" value="Place Order">
+            </div>
+        </form>
     </main>
 
     <footer>

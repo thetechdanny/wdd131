@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Online Stores</title>
+    <meta name="author" content="Daniel Kalu">
+    <meta name="description"
+        content="Shop online for the best products at unbeatable prices. Discover a wide range of items from drinks to snacks, all in one convenient place. Enjoy seamless shopping with fast shipping and excellent customer service.">
+    <link rel="icon" type="image/x-icon" href="/images/cart.png">
+    <link rel="stylesheet" href="styles/onlineshop.css">
+    <script src="scripts/onlineshop.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/cart.png" alt="logo">
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart<span id="cartNo">( )</span></a>
+            <a href="contact.html" target="_blank">Review</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="productReview">Product Review</h1>
+        <form method="get" action="review.html">
+
+            <p class="note">Note: Fields marked with red asterix are required</p>
+            <label for="product">Product Name <span class="required">*</span></label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+
+            </select>
+
+
+            <fieldset>
+                <legend>Rate Product <span class="required">*</span></legend>
+                <div>
+                    <input type="radio" name="rating" id="rate1" value="1" required>
+                    <label for="rate1">☆</label>
+                </div>
+                <div>
+                    <input type="radio" name="rating" id="rate2" value="2" required>
+                    <label for="rate2">☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" name="rating" id="rate3" value="3" required>
+                    <label for="rate3">☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" name="rating" id="rate4" value="4" required>
+                    <label for="rate4">☆☆☆☆</label>
+                </div>
+                <div>
+                    <input type="radio" name="rating" id="rate5" value="5" required>
+                    <label for="rate5">☆☆☆☆☆</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="features">
+                <legend>Satisfaction Rate <span class="required">*</span></legend>
+
+                <input type="radio" id="feature1" name="features" value="Very Dissatisfied" required>
+                <label for="feature1">Very Dissatisfied</label>
+                <br>
+
+                <input type="radio" id="feature2" name="features" value="Dissatisfied" required>
+                <label for="feature2">Dissatisfied</label>
+                <br>
+
+                <input type="radio" id="feature3" name="features" value="Neutral" required>
+                <label for="feature3">Neutral</label>
+                <br>
+
+                <input type="radio" id="feature4" name="features" value="Satisfied" reqiured>
+                <label for="feature4">Satisfied</label> <br>
+
+                <input type="radio" id="feature5" name="features" value="Very Satisfied" required>
+                <label for="feature5">Very Satisfied</label>
+
+            </fieldset>
+
+            <label for="reviewText">Feedback</label>
+            <textarea id="reviewText" name="reviewText" rows="5"></textarea>
+
+
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+
+            <input type="submit" value="Send Review">
+        </form>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ‖ Daniel Kalu - thetechdanny(Github Username) ‖ Nigeria</p>
+        <p><span>Last modification:</span> <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

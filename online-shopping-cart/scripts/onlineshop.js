@@ -3,11 +3,19 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
 const year = new Date().getFullYear();
 document.getElementById("currentyear").innerHTML = year;
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewDateEl = document.getElementById('reviewDate');
+    if (!reviewDateEl) return;
+    const now = new Date();
+    reviewDateEl.textContent = `Review submitted on: ${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+});
+
 const products = [
     {
         category: "food",
         name: "Cooked Shrimps",
-        price: "$100",
+        price: "₦100",
         image: "images/food1.webp",
         description: "Shrimps deliciously prepared and flavored to meet taste buds satisfaction"
     },
@@ -15,7 +23,7 @@ const products = [
     {
         category: "food",
         name: "Burger",
-        price: "$200",
+        price: "₦200",
         image: "images/food2.webp",
         description: "Nice and tasty burger. Soft and appealing"
     },
@@ -23,7 +31,7 @@ const products = [
     {
         category: "food",
         name: "Salad",
-        price: "$150",
+        price: "₦150",
         image: "images/food3.webp",
         description: "Fresh and crisp salad with a blend of nutritious vegetables and light dressing"
     },
@@ -31,7 +39,7 @@ const products = [
     {
         category: "food",
         name: "Korean Sushi",
-        price: "$100",
+        price: "₦100",
         image: "images/food4.webp",
         description: "Authentic Korean-style sushi rolls with premium ingredients and perfect balance of flavors"
     },
@@ -39,7 +47,7 @@ const products = [
     {
         category: "food",
         name: "Sweetened Burger",
-        price: "$100",
+        price: "₦100",
         image: "images/food5.webp",
         description: "Delicious burger with a hint of sweetness and savory toppings"
     },
@@ -47,7 +55,7 @@ const products = [
     {
         category: "food",
         name: "Italian Pizza",
-        price: "$150",
+        price: "₦150",
         image: "images/food6.webp",
         description: "Authentic Italian pizza with traditional toppings and a perfectly crispy crust"
     },
@@ -55,7 +63,7 @@ const products = [
     {
         category: "food",
         name: "Noodles",
-        price: "$100",
+        price: "₦100",
         image: "images/food7.webp",
         description: "Perfectly cooked noodles with savory sauce and fresh ingredients"
     },
@@ -63,7 +71,7 @@ const products = [
     {
         category: "food",
         name: "Samosa",
-        price: "$100",
+        price: "₦100",
         image: "images/food8.webp",
         description: "Crispy fried pastry filled with spiced potatoes and peas"
     },
@@ -71,7 +79,7 @@ const products = [
     {
         category: "drink",
         name: "Chinese Coca Cola",
-        price: "$50",
+        price: "₦50",
         image: "images/drink1.webp",
         description: "Classic Coca Cola taste imported from China with authentic packaging"
     },
@@ -79,7 +87,7 @@ const products = [
     {
         category: "drink",
         name: "Rani",
-        price: "$50",
+        price: "₦50",
         image: "images/drink2.webp",
         description: "Refreshing fruit juice drink with natural flavors and tropical taste"
     },
@@ -87,7 +95,7 @@ const products = [
     {
         category: "drink",
         name: "7Up",
-        price: "$50",
+        price: "₦50",
         image: "images/drink3.webp",
         description: "Crisp and clean lemon-lime flavored carbonated beverage"
     },
@@ -95,7 +103,7 @@ const products = [
     {
         category: "drink",
         name: "Thums Up",
-        price: "$50",
+        price: "₦50",
         image: "images/drink4.webp",
         description: "Bold and energizing cola drink with powerful taste and refreshing fizz"
     },
@@ -103,7 +111,7 @@ const products = [
     {
         category: "drink",
         name: "Coca Cola",
-        price: "$50",
+        price: "₦50",
         image: "images/drink5.webp",
         description: "The world's favorite cola drink with iconic taste and refreshing bubbles"
     },
@@ -111,7 +119,7 @@ const products = [
     {
         category: "drink",
         name: "Can Coca Cola",
-        price: "$50",
+        price: "₦50",
         image: "images/drink6.webp",
         description: "Original Coca Cola in convenient aluminum cans for on-the-go refreshment"
     },
@@ -119,7 +127,7 @@ const products = [
     {
         category: "snack",
         name: "Doritos",
-        price: "$70",
+        price: "₦70",
         image: "images/snack1.webp",
         description: "Crunchy triangular snack chips with bold flavors and satisfying taste"
     },
@@ -127,7 +135,7 @@ const products = [
     {
         category: "snack",
         name: "Pimento",
-        price: "$70",
+        price: "₦70",
         image: "images/snack2.webp",
         description: "Savory and spicy pepper-flavored snack with an addictive crunch"
     },
@@ -135,7 +143,7 @@ const products = [
     {
         category: "snack",
         name: "Pan",
-        price: "$70",
+        price: "₦70",
         image: "images/snack3.webp",
         description: "Traditional betel leaf-based snack with mint and spice blend"
     },
@@ -143,7 +151,7 @@ const products = [
     {
         category: "icecream",
         name: "Vanilla Muffins",
-        price: "$30",
+        price: "₦30",
         image: "images/icecream1.webp",
         description: "Soft and fluffy muffins with classic vanilla flavor and delicious texture"
     },
@@ -151,7 +159,7 @@ const products = [
     {
         category: "icecream",
         name: "Mango Muffins",
-        price: "$70",
+        price: "₦70",
         image: "images/icecream2.webp",
         description: "Tropical muffins infused with sweet mango flavor and fruity aroma"
     },
@@ -159,7 +167,7 @@ const products = [
     {
         category: "icecream",
         name: "Strawberry Muffins",
-        price: "$50",
+        price: "₦50",
         image: "images/icecream3.webp",
         description: "Delightful strawberry-flavored muffins with fresh berry taste and moist crumb"
     },
@@ -167,13 +175,22 @@ const products = [
     {
         category: "icecream",
         name: "Mojito",
-        price: "$50",
+        price: "₦50",
         image: "images/icecream5.webp",
         description: "Refreshing mint and lime flavored frozen treat inspired by the classic Mojito cocktail"
     },
 ]
 
 const productContainer = document.getElementById("featured-products");
+
+// Global cart counter with localStorage persistence (count of unique items)
+let cartItems = (() => {
+    const raw = localStorage.getItem('cart');
+    return raw ? JSON.parse(raw).length : 0;
+})();
+
+const _cartNoEl = document.querySelector("#cart-no") || document.querySelector("#cartNo");
+if (_cartNoEl) _cartNoEl.innerHTML = `( ${cartItems} )`;
 
 function loadRandomProducts() {
     productContainer.innerHTML = "";
@@ -185,7 +202,7 @@ function loadRandomProducts() {
     randomProducts.forEach((product, index) => {
         const productCard = document.createElement("div");
 
-        // Add animation delay for nice stagger effect
+        // Add animation delay 
         productCard.style.animationDelay = `${index * 0.2}s`;
         productCard.classList.add("slide-in");
 
@@ -226,7 +243,7 @@ function displayFilteredProducts(list) {
     });
 }
 
-// Display all products initially (if container exists)
+// Display all products initially 
 if (filteredContainer) {
     displayFilteredProducts(products);
 }
@@ -276,9 +293,13 @@ function openProductModal(product) {
         input.value++;
     });
 
-    // Add to cart handler
+    // Add to cart handler 
     detailsDiv.querySelector("#modalAddToCart").addEventListener("click", () => {
-        const qty = detailsDiv.querySelector("#modalQty").value;
+        const qty = parseInt(detailsDiv.querySelector("#modalQty").value, 10);
+        if (qty > 0) {
+            addToCart(product, qty);
+        }
+
         alert(`Added ${qty} x ${product.name} to cart!`);
         closeProductModal();
     });
@@ -317,4 +338,216 @@ filterLinks.forEach(link => {
         }
     });
 });
+
+// cart javascript
+
+function getCart() {
+    const raw = localStorage.getItem('cart');
+    return raw ? JSON.parse(raw) : [];
+}
+
+function saveCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart));
+    // Count number of unique items 
+    cartItems = cart.length;
+    localStorage.setItem('cartItems', cartItems);
+    const cartNo = document.querySelector('#cart-no') || document.querySelector('#cartNo');
+    if (cartNo) cartNo.innerHTML = `( ${cartItems} )`;
+}
+
+function addToCart(product, qty) {
+    const cart = getCart();
+    const existing = cart.find(i => i.name === product.name);
+    if (existing) {
+        existing.qty = parseInt(existing.qty, 10) + qty;
+    } else {
+        const priceNum = parseInt(String(product.price).replace(/[^0-9.-]+/g, ''), 10) || 0;
+        cart.push({
+            name: product.name,
+            price: product.price,
+            priceNum: priceNum,
+            image: product.image,
+            qty: qty
+        });
+    }
+    saveCart(cart);
+}
+
+function changeQty(index, delta) {
+    const cart = getCart();
+    if (!cart[index]) return;
+    cart[index].qty = Math.max(0, parseInt(cart[index].qty, 10) + delta);
+    if (cart[index].qty <= 0) cart.splice(index, 1);
+    saveCart(cart);
+    renderCartPage();
+}
+
+function removeItem(index) {
+    const cart = getCart();
+    if (!cart[index]) return;
+    cart.splice(index, 1);
+    saveCart(cart);
+    renderCartPage();
+}
+
+function renderCartPage() {
+    const container = document.getElementById('cartItems');
+    if (!container) return;
+
+    const cart = getCart();
+    if (!cart || cart.length === 0) {
+        container.innerHTML = '<p>Your cart is empty.</p>';
+        return;
+    }
+
+
+    let html = `
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+
+    let grandTotal = 0;
+    let deliveryFee = 500;
+    cart.forEach((item, idx) => {
+        const priceNum = (typeof item.priceNum !== 'undefined') ? parseInt(item.priceNum, 10) : (parseInt(String(item.price).replace(/[^0-9.-]+/g, ''), 10) || 0);
+        const subtotal = priceNum * (parseInt(item.qty, 10) || 0);
+        grandTotal += subtotal;
+
+        html += `
+            <tr data-index="${idx}">
+                <td style="display:flex; align-items:center; gap:8px;"><img src="${item.image}" alt="${item.name}" style="width:60px; height:60px; object-fit:cover; border-radius:6px;"> <span>${item.name}</span></td>
+                <td>₦${priceNum}</td>
+                <td style="text-align:center;">
+                    <button class="qty-decrease" data-index="${idx}" aria-label="Decrease">−</button>
+                    <span class="qty-value" data-index="${idx}" style="margin:0 8px;">${item.qty}</span>
+                    <button class="qty-increase" data-index="${idx}" aria-label="Increase">+</button>
+                </td>
+                <td>₦${subtotal}</td>
+                <td><button class="remove-item" data-index="${idx}">Remove</button></td>
+            </tr>
+        `;
+    });
+
+    html += `
+            </tbody>
+        </table>
+        <div style="padding: 1rem;">
+        <p><span style="font-weight:bold;">Total:</span> ₦${grandTotal}</p>
+        <p><span style="font-weight:bold;">Delivery Fee:</span> ₦${deliveryFee}</p>
+        <p><span style="font-weight:bold;">Grand Total (including delivery):</span> ₦${grandTotal + deliveryFee}</p>
+        </div>
+        <div style="text-align: center; margin:.3rem 0;">
+        <a href="payment.html" target="_blank"><input type="button" value="Proceed to Payment" id="proceedBtn"></a>
+        </div>
+        `;
+
+    container.innerHTML = html;
+
+    // Attach handlers
+    container.querySelectorAll('.qty-increase').forEach(btn => btn.addEventListener('click', (e) => {
+        const i = parseInt(e.currentTarget.dataset.index, 10);
+        changeQty(i, 1);
+    }));
+    container.querySelectorAll('.qty-decrease').forEach(btn => btn.addEventListener('click', (e) => {
+        const i = parseInt(e.currentTarget.dataset.index, 10);
+        changeQty(i, -1);
+    }));
+    container.querySelectorAll('.remove-item').forEach(btn => btn.addEventListener('click', (e) => {
+        const i = parseInt(e.currentTarget.dataset.index, 10);
+        removeItem(i);
+    }));
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderCartPage();
+
+    const clearBtn = document.getElementById('clearCartBtn');
+    if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            if (!confirm('Are you sure you want to clear the cart?')) return;
+            saveCart([]);
+            renderCartPage();
+        });
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const productSelect = document.querySelector("#product");
+    if (!productSelect) return;
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.name;
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
+});
+
+
+const counterDisplay = document.querySelector("#counterDisplay");
+if (counterDisplay) {
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    counterDisplay.textContent = `Total reviews submitted from this device: ${count}`;
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const summaryEl = document.getElementById('summaryDetails');
+    if (!summaryEl) return;
+
+    const cart = getCart();
+    if (!cart || cart.length === 0) {
+        summaryEl.innerHTML = '<p>Your cart is empty.</p>';
+        return;
+    }
+
+    let subtotal = 0;
+    cart.forEach(item => {
+        const price = (typeof item.priceNum !== 'undefined') ? parseInt(item.priceNum, 10) : (parseInt(String(item.price).replace(/[^0-9.-]+/g, ''), 10) || 0);
+        subtotal += price * (parseInt(item.qty, 10) || 0);
+    });
+
+    const deliveryFee = 500;
+    const grandTotal = subtotal + deliveryFee;
+
+    summaryEl.innerHTML = `
+        <p><span style="font-weight:bold;">Subtotal:</span> ₦${subtotal}</p>
+        <p><span style="font-weight:bold;">Delivery Fee:</span> ₦${deliveryFee}</p>
+        <p><span style="font-weight:bold;">Total:</span> ₦${grandTotal}</p>
+        `;
+});
+
+const radios = document.querySelectorAll('input[name="Delivery"]');
+const proceedBtn = document.getElementById("placeOrder");
+
+radios.forEach(radio => {
+    radio.addEventListener("change", () => {
+        proceedBtn.disabled = false;
+    });
+});
+
+placeOrder.addEventListener("click", (e) => {
+    const selected = document.querySelector('input[name="Delivery"]:checked');
+
+    if (!selected) {
+        e.preventDefault();
+        alert("Please select a payment method first.");
+        return;
+    }
+});
+
+
+
 
