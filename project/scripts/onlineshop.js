@@ -181,7 +181,7 @@ const products = [
     },
 ]
 
-const productContainer = document.getElementById("featured-products");
+const productContainer = document.querySelector(".featured-products");
 
 // Global cart counter with localStorage persistence (count of unique items)
 let cartItems = (() => {
@@ -452,7 +452,7 @@ function renderCartPage() {
 
     container.innerHTML = html;
 
-    // Attach handlers
+    
     container.querySelectorAll('.qty-increase').forEach(btn => btn.addEventListener('click', (e) => {
         const i = parseInt(e.currentTarget.dataset.index, 10);
         changeQty(i, 1);
@@ -547,7 +547,5 @@ placeOrder.addEventListener("click", (e) => {
         return;
     }
 });
-
-
 
 

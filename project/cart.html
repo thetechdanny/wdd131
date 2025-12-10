@@ -19,9 +19,8 @@
 <body>
     <header>
         <div id="logo">
-            <img src="images/cart.png" alt="logo">
+            <img src="images/cart.png" alt="logo" width="50" height="50">
         </div>
-
         <nav>
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
@@ -30,35 +29,19 @@
         </nav>
     </header>
     <main>
-
-        <section id="hero-section">
-            <img id="hero" src="images/heroimg.webp" alt="Shopping image">
-
-            <div id="welcome">
-                <p>...Welcome to... </p>
-                <h1>Danny Online Stores</h1>
-                <p>Your one-stop shop for all your needs!</p>
-                <a href="products.html" target="_blank"><input type="button" value="Shop Now"></a>
-
-                
+        <div id="cartContainer">
+            <div id="cartBody">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem;">
+                    <h3>Cart Items</h3>
+                    <button id="clearCartBtn">Clear Cart</button>
+                </div>
+                <div id="cartItems"></div>
             </div>
-        </section>
-
-        <div id="prod-serv">
-            <p>Featured Products:</p>
-            <div id="featured-products"></div>
-
-            <div id="benefits">
-                <p>Benefits</p>
-                <ul>
-                    <li>Fast Delivery</li>
-                    <li>Quality Food</li>
-                    <li>Best Prices</li>
-                    <li>24/7 Customer Support</li>
-                </ul>
+            <div class="asideContainer">
+                <p>You may also like </p>
+                <aside class="featured-products"></aside>
             </div>
         </div>
-
     </main>
 
     <footer>
